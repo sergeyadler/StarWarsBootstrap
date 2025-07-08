@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poller+One&display=swap');
+
+* {
+
+    margin: 0;
+}
+
+nav  li {
+    color: #ffe81f;
+    font-size: 1.3em;
+    cursor: pointer;
+}
+
+body {
+    font-family: "Poller One", sans-serif;
+    background-image: url("../Images/sky.jpg");
+    color: #FFE818;
+    display: flex;
+    flex-direction: column;
+
+    min-height: 100vh; /* важно! */
+}
+
+.hero {
+    /*background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url("../images/starwars.jpeg");*/
+    height: 90vh;
+    background-position: center;
+    background-size: cover;
+    background-color: black;
+    padding-top: 4em ;
+
+}
+
+.hero-text{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffe81f;
+    font-size: 36px;
+    font-weight: 600;
+}
+main {
+    flex-grow: 1;
+}
+.crawl-container {
+    background-image: url("../Images/sky.jpg");
+    width: 100%;
+    height: 100vh; /* Занимает всю высоту экрана */
+    overflow: hidden; /* Скрывает текст, выходящий за пределы контейнера */
+    perspective: 400px; /* Добавляет перспективу для 3D-эффекта */
+}
+
+.crawl {
+    position: absolute;
+    bottom: 0;
+    transform-origin: bottom center;
+    transform: rotateX(20deg) translateY(100%); /* Начальное положение и поворот */
+    animation: crawl 50s linear infinite; /* Анимация */
+    color: gold; /* Цвет текста */
+    font-size: 2em; /* Размер текста */
+    text-align: center; /* Выравнивание по центру */
+    line-height: 4em;
+
+
+}
+h1 {
+    font-size: 100px;
+}
+h2{
+    font-size: 70px;
+}
+@keyframes crawl {
+    0% {
+        transform: rotateX(20deg) translateY(100%);
+    }
+    100% {
+        transform: rotateX(20deg) translateY(-150%); /* Достигает верхней части экрана */
+    }
+}
+.farGalaxy{
+    color: #ffe81f;
+    font-size: 1em;
+    line-height: 1.6em;
+    padding: 10px;
+}
+footer{
+    flex-shrink: 0;
+}
+.team{
+    font-size: 2.5em;
+}
