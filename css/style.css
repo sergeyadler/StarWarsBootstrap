@@ -13,7 +13,7 @@ nav  li {
 
 body {
     font-family: "Poller One", sans-serif;
-    background-image: url("../Images/sky.jpg");
+    background-image: url("../images/sky.jpg");
     color: #FFE818;
     display: flex;
     flex-direction: column;
@@ -44,7 +44,7 @@ main {
     flex-grow: 1;
 }
 .crawl-container {
-    background-image: url("../Images/sky.jpg");
+    background-image: url("../images/sky.jpg");
     width: 100%;
     height: 100vh; /* Занимает всю высоту экрана */
     overflow: hidden; /* Скрывает текст, выходящий за пределы контейнера */
